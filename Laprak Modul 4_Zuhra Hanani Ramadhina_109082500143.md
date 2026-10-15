@@ -305,7 +305,7 @@ Program utama membuat list kosong dan lima node mahasiswa (nodeA sampai nodeE), 
 
 ### 1. Program ADT Singly Linked List Menggunakan insertFirst dan printInfo
 
-#### Source Code singlylist.h
+#### Source Code Singlylist.h
 ```C++
 #ifndef SINGLYLIST_H
 #define SINGLYLIST_H
@@ -460,7 +460,7 @@ int main() {
     return 0;
 }
 ```
-Program utama membuat list kosong, lalu mengalokasikan lima node dengan nilai 2, 0, 8, 12, dan 9. Setiap node dimasukkan dengan insertFirst(), sehingga node yang dimasukkan terakhir menjadi node pertama. Karena itu urutan list menjadi 9, 12, 8, 0, 2, sesuai output yang diminta soal.
+Program utama membuat list kosong, lalu mengalokasikan lima node (A sampai E). Node disusun dengan insertFirst (A), insertLast (B), insertAfter (C setelah A, D setelah C), dan insertLast (E), sehingga urutan list menjadi A, C, D, B, E dengan jumlah node 5. Setelah itu delFirst menghapus A, delLast menghapus E, dan delAfter menghapus D, sehingga tersisa C, B. Terakhir deleteList() menghapus semua node sehingga list kosong.
 
 ### Output Unguided 1 :
 
@@ -516,5 +516,6 @@ Program membentuk list yang sama seperti soal 1 (9, 12, 8, 0, 2), lalu menghapus
 Berdasarkan praktikum yang telah dilakukan, dapat disimpulkan bahwa singly linked list merupakan struktur data dinamis yang tersusun dari node-node yang saling terhubung melalui pointer `next`, sehingga ukurannya dapat bertambah dan berkurang saat program berjalan tanpa harus ditentukan di awal seperti array. Operasi dasar pada linked list, yaitu insert, delete, dan penelusuran (traversal), dilakukan dengan mengatur pointer antar node dan harus dilakukan dengan hati-hati agar rantai node tidak terputus. Penerapan manajemen memori menggunakan `new` dan `delete` juga penting agar memori node yang tidak terpakai dikembalikan ke sistem. Melalui latihan guided dan unguided, mahasiswa dilatih membangun ADT singly linked list dalam program multi-file serta menerapkan operasi penambahan, penghapusan, dan penghitungan node.
 
 ## Referensi
-[1] Triase. (2020). Diktat Edisi Revisi : STRUKTUR DATA. Medan: UNIVERSTAS ISLAM NEGERI SUMATERA UTARA MEDAN.
-<br>[2] Indahyanti, Uce., Rahmawati, Yunianita. (2020). *Buku Ajar Algoritma dan Pemrograman dalam Bahasa C++*. Sidoarjo: UMSIDA Press. Diakses melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+Malik, D. S. (2005). *Data structures using C++* (2nd ed.). Course Technology.
+Yatini, B., Indra, & Nasution, E. (2005). *Algoritma dan struktur data dengan C++*. Graha Ilmu.
+<br>
